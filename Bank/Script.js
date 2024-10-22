@@ -21,7 +21,7 @@ switch(user){
         let Deposite = parseInt(prompt("Enter Deposite Amount: "));
         TotalAmount=Balance+Deposite;
         console.log("Deposite Amount: ",Deposite);
-        console.log("Remaining Amount: ",TotalAmount);
+        console.log("Total Amount: ",TotalAmount);
     break;
     case 4:
         let Transfer = parseInt(prompt("Enter Transfer Amount: "));
