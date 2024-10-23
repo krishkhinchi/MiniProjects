@@ -17,6 +17,7 @@ if(checkbank==1){
             }
             else{
                 console.log("Not Enough Money");
+                console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
             }
         break;
         case 3:
@@ -33,6 +34,7 @@ if(checkbank==1){
                 console.log("Remaining Amount: ",TotalAmount);
             } else{
                 console.log("Not Enough Money");
+                console.log(`You want to Transfer ${Transfer}rs but Your balance is ${Balance}rs only`);
             }
         break;
         default:
@@ -49,4 +51,6 @@ if(checkbank==1){
     } else{
         alert("Please Enter a Number between 1 to 2");
     }
+} else{
+    alert("Please Enter a Number between 1 to 2");
 }
