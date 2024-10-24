@@ -133,18 +133,22 @@ if(checkbank==1||checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
             if(DL=="Yes"||DL=="yes"||DL=="YES"){
                 let adhar=parseInt(prompt("Enter your Adhar Number: "));
                 let pan=parseInt(prompt("Enter yout PAN Number: "));
-                 //remaining
+                alert("Thanks for submitting your details, your account will be created soon");
             } else if(DL=="No"||DL=="no"||DL=="NO"){
                 alert("Sorry, You can't create bank account. Due to you don't have Driving License");
             } else{
                 alert("Invalid Input of Driving License");
             }
-            } 
         } else if(age<18){
             alert("Sorry, You can't create bank account. Due to you are minor");
         } else{
             alert("Invalid Input of Age");
         }
+    } else if(user==2){
+        alert("Visit Again")
+    } else{
+        alert("Please Enter a Number between 1 to 2");
+    }
 } else{
-    alert("Please Enter a Number between 1 to 2");
+    alert("Please select Yes or No");
 }
