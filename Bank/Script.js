@@ -1,7 +1,7 @@
 alert("Welcome to Krish Bankz");
 var TotalAmount;
-var checkbank=parseInt(prompt("Do you have a Bank Account? press 1:Yes, 2:No"));
-if(checkbank==1){
+var checkbank=prompt("Do you have a Bank Account? (YES/NO): ");
+if(checkbank==1||checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
     var account=parseInt(prompt("Enter your Account Number"));
     if(account==123){
         let user = parseInt(prompt("Enter 1:Check Balance, 2:Withdraw, 3:Deposite, 4:Transfer :"));
@@ -123,17 +123,28 @@ if(checkbank==1){
     } else {
         alert("Invalid Account Number");
     }
-} else if(checkbank==2){
+} else if(checkbank==2||checkbank=="no"||checkbank=="NO"||checkbank=="No"){
     let user = parseInt(prompt("Enter 1:Create Account, 2:Exit :"));
     if(user==1){
-        let adhar=parseInt(prompt("Enter your Adhar Number: "));
-        let pan=parseInt(prompt("Enter yout PAN Number: "));
-        //remaining
-    } else if(user==2){
-        alert("You are Exit successfully, Thank you for visiting Krish Bankz");
-    } else{
-        alert("Please Enter a Number between 1 to 2");
-    }
+        let name=prompt("Enter your Name: ");
+        let age=parseInt(prompt("Enter your Age: "));
+        if(age>=18){
+            let DL=prompt("You have Driving License? (Yes/No)");
+            if(DL=="Yes"||DL=="yes"||DL=="YES"){
+                let adhar=parseInt(prompt("Enter your Adhar Number: "));
+                let pan=parseInt(prompt("Enter yout PAN Number: "));
+                 //remaining
+            } else if(DL=="No"||DL=="no"||DL=="NO"){
+                alert("Sorry, You can't create bank account. Due to you don't have Driving License");
+            } else{
+                alert("Invalid Input of Driving License");
+            }
+            } 
+        } else if(age<18){
+            alert("Sorry, You can't create bank account. Due to you are minor");
+        } else{
+            alert("Invalid Input of Age");
+        }
 } else{
     alert("Please Enter a Number between 1 to 2");
 }
