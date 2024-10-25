@@ -12,15 +12,22 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 window.alert(`Your Balance is: ${Balance}rs`);
             break;
             case 2:
-                let Withdraw = parseInt(prompt("Enter Withdraw Amount: "));
+                let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: Rs 100, Rs 500, Rs 200): "));
                 if(Balance>=Withdraw){
-                    TotalAmount=Balance-Withdraw;
-                    console.log(`Withdrawal Amount: ${Withdraw}rs`);
-                    console.log(`Remaining Amount: ${TotalAmount}rs`);
-                }
-                else{
+                    if(Withdraw%100==0){
+                        TotalAmount=Balance-Withdraw;
+                        console.log(`Withdrawal Amount: ${Withdraw}rs`);
+                        console.log(`Remaining Amount: ${TotalAmount}rs`);
+                    } else if(Withdraw%100!=0){
+                        window.alert("Only 100, 500, 200 notes are available");
+                    } else{
+                        window.alert("Invalid Amount");
+                    }
+                } else if(Withdraw>Balance){
                     console.log("Not Enough Money");
                     console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
+                } else{
+                    window.alert("Invalid Amount");
                 }
             break;
             case 3:
@@ -52,15 +59,22 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 window.alert(`Your Balance is: ${Balance}rs`);
             break;
             case 2:
-                let Withdraw = parseInt(prompt("Enter Withdraw Amount: "));
+                let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: Rs 100, Rs 500, Rs 200): "));
                 if(Balance>=Withdraw){
-                    TotalAmount=Balance-Withdraw;
-                    console.log(`Withdrawal Amount: ${Withdraw}rs`);
-                    console.log(`Remaining Amount: ${TotalAmount}rs`);
-                }
-                else{
+                    if(Withdraw%100==0){
+                        TotalAmount=Balance-Withdraw;
+                        console.log(`Withdrawal Amount: ${Withdraw}rs`);
+                        console.log(`Remaining Amount: ${TotalAmount}rs`);
+                    } else if(Withdraw%100!=0){
+                        window.alert("Only 100, 500, 200 notes are available");
+                    } else{
+                        window.alert("Invalid Amount");
+                    }
+                } else if(Withdraw>Balance){
                     console.log("Not Enough Money");
                     console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
+                } else{
+                    window.alert("Invalid Amount");
                 }
             break;
             case 3:
@@ -92,15 +106,22 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 window.alert(`Your Balance is: ${Balance}rs`);
             break;
             case 2:
-                let Withdraw = parseInt(prompt("Enter Withdraw Amount: "));
+                let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: Rs 100, Rs 500, Rs 200): "));
                 if(Balance>=Withdraw){
-                    TotalAmount=Balance-Withdraw;
-                    console.log(`Withdrawal Amount: ${Withdraw}rs`);
-                    console.log(`Remaining Amount: ${TotalAmount}rs`);
-                }
-                else{
+                    if(Withdraw%100==0){
+                        TotalAmount=Balance-Withdraw;
+                        console.log(`Withdrawal Amount: ${Withdraw}rs`);
+                        console.log(`Remaining Amount: ${TotalAmount}rs`);
+                    } else if(Withdraw%100!=0){
+                        window.alert("Only 100, 500, 200 notes are available");
+                    } else{
+                        window.alert("Invalid Amount");
+                    }
+                } else if(Withdraw>Balance){
                     console.log("Not Enough Money");
                     console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
+                } else{
+                    window.alert("Invalid Amount");
                 }
             break;
             case 3:
