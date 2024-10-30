@@ -53,7 +53,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 }
             break;
             case 4:
-                let TransferAccount = parseint(prompt("Enter A/C to transfer: "));
+                let TransferAccount = parseInt(prompt("Enter A/C to transfer: "));
                 if(!((TransferAccount>="A"&&TransferAccount<="Z")||(TransferAccount>="a"&&TransferAccount<="z"))){
                     let Transfer = parseInt(prompt("Enter Transfer Amount: "));
                     if(Balance>=Transfer){
@@ -120,7 +120,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 }
             break;
             case 4:
-                let TransferAccount = parseint(prompt("Enter A/C to transfer: "));
+                let TransferAccount = parseInt(prompt("Enter A/C to transfer: "));
                 if(!((TransferAccount>="A"&&TransferAccount<="Z")||(TransferAccount>="a"&&TransferAccount<="z"))){
                     let Transfer = parseInt(prompt("Enter Transfer Amount: "));
                     if(Balance>=Transfer){
@@ -187,7 +187,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 }
             break;
             case 4:
-                let TransferAccount = parseint(prompt("Enter A/C to transfer: "));
+                let TransferAccount = parseInt(prompt("Enter A/C to transfer: "));
                 if(!((TransferAccount>="A"&&TransferAccount<="Z")||(TransferAccount>="a"&&TransferAccount<="z"))){
                     let Transfer = parseInt(prompt("Enter Transfer Amount: "));
                     if(Balance>=Transfer){
