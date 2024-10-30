@@ -40,9 +40,17 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
             break;
             case 3:
                 let Deposite = parseInt(prompt("Enter Deposite Amount: "));
+                if(Deposite>0){
                 TotalAmount=Balance+Deposite;
                 console.log(`Deposite Amount: ${Deposite}rs`);
                 console.log(`Total Amount: ${TotalAmount}rs`);
+                }else if(Deposite==0){
+                    window.alert("Deposite Amount can't be Zero");
+                } else if(Deposite<0){
+                    window.alert("Deposite Amount can't be Negative");
+                } else{
+                    window.alert("Invalid Amount, Please enter a numeric value");
+                }
             break;
             case 4:
                 let transferAccount = parseint(prompt("Enter A/C to transfer"));
@@ -95,9 +103,17 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
             break;
             case 3:
                 let Deposite = parseInt(prompt("Enter Deposite Amount: "));
-                TotalAmount=Balance+Deposite;
-                console.log(`Deposite Amount: ${Deposite}rs`);
-                console.log(`Total Amount: ${TotalAmount}rs`);
+                if(Deposite>0){
+                    TotalAmount=Balance+Deposite;
+                    console.log(`Deposite Amount: ${Deposite}rs`);
+                    console.log(`Total Amount: ${TotalAmount}rs`);
+                    }else if(Deposite==0){
+                        window.alert("Deposite Amount can't be Zero");
+                    } else if(Deposite<0){
+                        window.alert("Deposite Amount can't be Negative");
+                    } else{
+                        window.alert("Invalid Amount, Please enter a numeric value");
+                }
             break;
             case 4:
                 let transferAccount = parseint(prompt("Enter A/C to transfer"));
@@ -150,9 +166,17 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
             break;
             case 3:
                 let Deposite = parseInt(prompt("Enter Deposite Amount: "));
-                TotalAmount=Balance+Deposite;
-                console.log(`Deposite Amount: ${Deposite}rs`);
-                console.log(`Total Amount: ${TotalAmount}rs`);
+                if(Deposite>0){
+                    TotalAmount=Balance+Deposite;
+                    console.log(`Deposite Amount: ${Deposite}rs`);
+                    console.log(`Total Amount: ${TotalAmount}rs`);
+                    }else if(Deposite==0){
+                        window.alert("Deposite Amount can't be Zero");
+                    } else if(Deposite<0){
+                        window.alert("Deposite Amount can't be Negative");
+                    } else{
+                        window.alert("Invalid Amount, Please enter a numeric value");
+                }
             break;
             case 4:
                 let transferAccount = parseint(prompt("Enter A/C to transfer"));
