@@ -53,6 +53,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 }
             break;
             case 4:
+                //work in progress
                 let TransferAccount = parseInt(prompt("Enter A/C to transfer: "));
                 if(!((TransferAccount>="A"&&TransferAccount<="Z")||(TransferAccount>="a"&&TransferAccount<="z"))){
                     let Transfer = parseInt(prompt("Enter Transfer Amount: "));
@@ -67,6 +68,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 } else{
                     window.alert("Account Number can't be in Character");
                 }
+                //Solving some bugs
             break;
             default:
                 window.alert("Please Enter a Number between 1 to 4");
@@ -120,6 +122,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 }
             break;
             case 4:
+                //work in progress
                 let TransferAccount = parseInt(prompt("Enter A/C to transfer: "));
                 if(!((TransferAccount>="A"&&TransferAccount<="Z")||(TransferAccount>="a"&&TransferAccount<="z"))){
                     let Transfer = parseInt(prompt("Enter Transfer Amount: "));
@@ -134,6 +137,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 } else{
                     window.alert("Account Number can't be in Character");
                 }
+                //Solving some bugs
             break;
             default:
                 window.alert("Please Enter a Number between 1 to 4");
@@ -187,6 +191,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 }
             break;
             case 4:
+                //work in progress
                 let TransferAccount = parseInt(prompt("Enter A/C to transfer: "));
                 if(!((TransferAccount>="A"&&TransferAccount<="Z")||(TransferAccount>="a"&&TransferAccount<="z"))){
                     let Transfer = parseInt(prompt("Enter Transfer Amount: "));
@@ -201,6 +206,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 } else{
                     window.alert("Account Number can't be in Character");
                 }
+                //Solving some bugs
             break;
             default:
                 window.alert("Please Enter a Number between 1 to 4");
