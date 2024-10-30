@@ -13,21 +13,29 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
             break;
             case 2:
                 let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: Rs 100, Rs 500, Rs 200): "));
-                if(Balance>=Withdraw){
-                    if(Withdraw%100==0){
-                        TotalAmount=Balance-Withdraw;
-                        console.log(`Withdrawal Amount: ${Withdraw}rs`);
-                        console.log(`Remaining Amount: ${TotalAmount}rs`);
-                    } else if(Withdraw%100!=0){
-                        window.alert("Only 100, 500, 200 notes are available");
+                if(Withdraw>0){
+                    if(Balance>=Withdraw){
+                        if(Withdraw%100==0){
+                            TotalAmount=Balance-Withdraw;
+                            console.log(`Withdrawal Amount: ${Withdraw}rs`);
+                            console.log(`Remaining Amount: ${TotalAmount}rs`);
+                        } else if(Withdraw%100!=0){
+                            window.alert("Only 100, 500, 200 notes are available");
+                        } else{
+                            window.alert("Invalid Amount");
+                        }
+                    } else if(Withdraw>Balance){
+                        console.log("Not Enough Money");
+                        console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
                     } else{
                         window.alert("Invalid Amount");
                     }
-                } else if(Withdraw>Balance){
-                    console.log("Not Enough Money");
-                    console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
+                } else if(Withdraw==0){
+                    window.alert("Withdrawal Amount can't be Zero");
+                } else if(Withdraw<0){
+                    window.alert("Withdrawal Amount can't be Negative");
                 } else{
-                    window.alert("Invalid Amount");
+                    window.alert("Invalid Amount, Please enter a numeric value");
                 }
             break;
             case 3:
@@ -60,21 +68,29 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
             break;
             case 2:
                 let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: Rs 100, Rs 500, Rs 200): "));
-                if(Balance>=Withdraw){
-                    if(Withdraw%100==0){
-                        TotalAmount=Balance-Withdraw;
-                        console.log(`Withdrawal Amount: ${Withdraw}rs`);
-                        console.log(`Remaining Amount: ${TotalAmount}rs`);
-                    } else if(Withdraw%100!=0){
-                        window.alert("Only 100, 500, 200 notes are available");
+                if(Withdraw>0){
+                    if(Balance>=Withdraw){
+                        if(Withdraw%100==0){
+                            TotalAmount=Balance-Withdraw;
+                            console.log(`Withdrawal Amount: ${Withdraw}rs`);
+                            console.log(`Remaining Amount: ${TotalAmount}rs`);
+                        } else if(Withdraw%100!=0){
+                            window.alert("Only 100, 500, 200 notes are available");
+                        } else{
+                            window.alert("Invalid Amount");
+                        }
+                    } else if(Withdraw>Balance){
+                        console.log("Not Enough Money");
+                        console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
                     } else{
                         window.alert("Invalid Amount");
                     }
-                } else if(Withdraw>Balance){
-                    console.log("Not Enough Money");
-                    console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
+                } else if(Withdraw==0){
+                    window.alert("Withdrawal Amount can't be Zero");
+                } else if(Withdraw<0){
+                    window.alert("Withdrawal Amount can't be Negative");
                 } else{
-                    window.alert("Invalid Amount");
+                    window.alert("Invalid Amount, Please enter a numeric value");
                 }
             break;
             case 3:
@@ -107,21 +123,29 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
             break;
             case 2:
                 let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: Rs 100, Rs 500, Rs 200): "));
-                if(Balance>=Withdraw){
-                    if(Withdraw%100==0){
-                        TotalAmount=Balance-Withdraw;
-                        console.log(`Withdrawal Amount: ${Withdraw}rs`);
-                        console.log(`Remaining Amount: ${TotalAmount}rs`);
-                    } else if(Withdraw%100!=0){
-                        window.alert("Only 100, 500, 200 notes are available");
+                if(Withdraw>0){
+                    if(Balance>=Withdraw){
+                        if(Withdraw%100==0){
+                            TotalAmount=Balance-Withdraw;
+                            console.log(`Withdrawal Amount: ${Withdraw}rs`);
+                            console.log(`Remaining Amount: ${TotalAmount}rs`);
+                        } else if(Withdraw%100!=0){
+                            window.alert("Only 100, 500, 200 notes are available");
+                        } else{
+                            window.alert("Invalid Amount");
+                        }
+                    } else if(Withdraw>Balance){
+                        console.log("Not Enough Money");
+                        console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
                     } else{
                         window.alert("Invalid Amount");
                     }
-                } else if(Withdraw>Balance){
-                    console.log("Not Enough Money");
-                    console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
+                } else if(Withdraw==0){
+                    window.alert("Withdrawal Amount can't be Zero");
+                } else if(Withdraw<0){
+                    window.alert("Withdrawal Amount can't be Negative");
                 } else{
-                    window.alert("Invalid Amount");
+                    window.alert("Invalid Amount, Please enter a numeric value");
                 }
             break;
             case 3:
