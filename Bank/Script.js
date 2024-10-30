@@ -53,15 +53,19 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 }
             break;
             case 4:
-                let transferAccount = parseint(prompt("Enter A/C to transfer"));
-                let Transfer = parseInt(prompt("Enter Transfer Amount: "));
-                if(Balance>=Transfer){
-                    TotalAmount=Balance-Transfer;
-                    console.log(`Transfer Amount: ${Transfer}rs`);
-                    console.log(`Remaining Amount: ${TotalAmount}rs`);
+                let TransferAccount = parseint(prompt("Enter A/C to transfer: "));
+                if(!((TransferAccount>="A"&&TransferAccount<="Z")||(TransferAccount>="a"&&TransferAccount<="z"))){
+                    let Transfer = parseInt(prompt("Enter Transfer Amount: "));
+                    if(Balance>=Transfer){
+                        TotalAmount=Balance-Transfer;
+                        console.log(`Transfer Amount: ${Transfer}rs`);
+                        console.log(`Remaining Amount: ${TotalAmount}rs`);
+                    } else{
+                        console.log("Not Enough Money");
+                        console.log(`You want to Transfer ${Transfer}rs but Your balance is ${Balance}rs only`);
+                    }
                 } else{
-                    console.log("Not Enough Money");
-                    console.log(`You want to Transfer ${Transfer}rs but Your balance is ${Balance}rs only`);
+                    window.alert("Account Number can't be in Character");
                 }
             break;
             default:
@@ -116,15 +120,19 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 }
             break;
             case 4:
-                let transferAccount = parseint(prompt("Enter A/C to transfer"));
-                let Transfer = parseInt(prompt("Enter Transfer Amount: "));
-                if(Balance>=Transfer){
-                    TotalAmount=Balance-Transfer;
-                    console.log(`Transfer Amount: ${Transfer}rs`);
-                    console.log(`Remaining Amount: ${TotalAmount}rs`);
+                let TransferAccount = parseint(prompt("Enter A/C to transfer: "));
+                if(!((TransferAccount>="A"&&TransferAccount<="Z")||(TransferAccount>="a"&&TransferAccount<="z"))){
+                    let Transfer = parseInt(prompt("Enter Transfer Amount: "));
+                    if(Balance>=Transfer){
+                        TotalAmount=Balance-Transfer;
+                        console.log(`Transfer Amount: ${Transfer}rs`);
+                        console.log(`Remaining Amount: ${TotalAmount}rs`);
+                    } else{
+                        console.log("Not Enough Money");
+                        console.log(`You want to Transfer ${Transfer}rs but Your balance is ${Balance}rs only`);
+                    }
                 } else{
-                    console.log("Not Enough Money");
-                    console.log(`You want to Transfer ${Transfer}rs but Your balance is ${Balance}rs only`);
+                    window.alert("Account Number can't be in Character");
                 }
             break;
             default:
@@ -179,15 +187,19 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 }
             break;
             case 4:
-                let transferAccount = parseint(prompt("Enter A/C to transfer"));
-                let Transfer = parseInt(prompt("Enter Transfer Amount: "));
-                if(Balance>=Transfer){
-                    TotalAmount=Balance-Transfer;
-                    console.log(`Transfer Amount: ${Transfer}rs`);
-                    console.log(`Remaining Amount: ${TotalAmount}rs`);
+                let TransferAccount = parseint(prompt("Enter A/C to transfer: "));
+                if(!((TransferAccount>="A"&&TransferAccount<="Z")||(TransferAccount>="a"&&TransferAccount<="z"))){
+                    let Transfer = parseInt(prompt("Enter Transfer Amount: "));
+                    if(Balance>=Transfer){
+                        TotalAmount=Balance-Transfer;
+                        console.log(`Transfer Amount: ${Transfer}rs`);
+                        console.log(`Remaining Amount: ${TotalAmount}rs`);
+                    } else{
+                        console.log("Not Enough Money");
+                        console.log(`You want to Transfer ${Transfer}rs but Your balance is ${Balance}rs only`);
+                    }
                 } else{
-                    console.log("Not Enough Money");
-                    console.log(`You want to Transfer ${Transfer}rs but Your balance is ${Balance}rs only`);
+                    window.alert("Account Number can't be in Character");
                 }
             break;
             default:
