@@ -3,7 +3,7 @@ window.alert("Welcome to Krish Bankz");
 var TotalAmount;
 var checkbank=prompt("Do you have a Bank Account? (YES/NO): ");
 if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
-    var account=parseInt(prompt("Enter your Account Number"));
+    var account=parseInt(prompt("Enter your Account Number: "));
     if(account==123){
         let user = parseInt(prompt("Enter 1:Check Balance, 2:Withdraw, 3:Deposite, 4:Transfer :"));
         let Balance = 25590;
