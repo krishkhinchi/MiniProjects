@@ -9,24 +9,24 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
         let Balance = 25590;
         switch(user){
             case 1:
-                window.alert(`Your Balance is: ${Balance}rs`);
+                window.alert(`Your Balance is: ${Balance}₹`);
             break;
             case 2:
-                let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: Rs 100, Rs 500, Rs 200): "));
+                let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: ₹ 100, 500, 200): "));
                 if(Withdraw>0){
                     if(Balance>=Withdraw){
                         if(Withdraw%100==0){
                             TotalAmount=Balance-Withdraw;
-                            console.log(`Withdrawal Amount: ${Withdraw}rs`);
-                            console.log(`Remaining Amount: ${TotalAmount}rs`);
+                            console.log(`Withdrawal Amount: ${Withdraw}₹`);
+                            console.log(`Remaining Amount: ${TotalAmount}₹`);
                         } else if(Withdraw%100!=0){
-                            window.alert("Only 100, 500, 200 notes are available");
+                            window.alert("Only ₹ 100, 500, 200 notes are available");
                         } else{
                             window.alert("Invalid Amount");
                         }
                     } else if(Withdraw>Balance){
                         console.log("Not Enough Money");
-                        console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
+                        console.log(`You want to Withdraw ${Withdraw}₹ but Your balance is ${Balance}₹ only`);
                     } else{
                         window.alert("Invalid Amount");
                     }
@@ -42,8 +42,8 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 let Deposite = parseInt(prompt("Enter Deposite Amount: "));
                 if(Deposite>0){
                 TotalAmount=Balance+Deposite;
-                console.log(`Deposite Amount: ${Deposite}rs`);
-                console.log(`Total Amount: ${TotalAmount}rs`);
+                console.log(`Deposite Amount: ${Deposite}₹`);
+                console.log(`Total Amount: ${TotalAmount}₹`);
                 }else if(Deposite==0){
                     window.alert("Deposite Amount can't be Zero");
                 } else if(Deposite<0){
@@ -60,11 +60,11 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                     let Transfer = parseInt(prompt("Enter Transfer Amount: "));
                     if(Balance>=Transfer){
                         TotalAmount=Balance-Transfer;
-                        console.log(`Transfer Amount: ${Transfer}rs`);
-                        console.log(`Remaining Amount: ${TotalAmount}rs`);
+                        console.log(`Transfer Amount: ${Transfer}₹`);
+                        console.log(`Remaining Amount: ${TotalAmount}₹`);
                     } else{
                         console.log("Not Enough Money");
-                        console.log(`You want to Transfer ${Transfer}rs but Your balance is ${Balance}rs only`);
+                        console.log(`You want to Transfer ${Transfer}₹ but Your balance is ${Balance}₹ only`);
                     }
                 } else{
                     window.alert("Account Number can't be in Character");
@@ -78,24 +78,24 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
         let Balance = 562900;
         switch(user){
             case 1:
-                window.alert(`Your Balance is: ${Balance}rs`);
+                window.alert(`Your Balance is: ${Balance}₹`);
             break;
             case 2:
-                let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: Rs 100, Rs 500, Rs 200): "));
+                let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: ₹ 100, 500, 200): "));
                 if(Withdraw>0){
                     if(Balance>=Withdraw){
                         if(Withdraw%100==0){
                             TotalAmount=Balance-Withdraw;
-                            console.log(`Withdrawal Amount: ${Withdraw}rs`);
-                            console.log(`Remaining Amount: ${TotalAmount}rs`);
+                            console.log(`Withdrawal Amount: ${Withdraw}₹`);
+                            console.log(`Remaining Amount: ${TotalAmount}₹`);
                         } else if(Withdraw%100!=0){
-                            window.alert("Only 100, 500, 200 notes are available");
+                            window.alert("Only ₹ 100, 500, 200 notes are available");
                         } else{
                             window.alert("Invalid Amount");
                         }
                     } else if(Withdraw>Balance){
                         console.log("Not Enough Money");
-                        console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
+                        console.log(`You want to Withdraw ${Withdraw}₹ but Your balance is ${Balance}₹ only`);
                     } else{
                         window.alert("Invalid Amount");
                     }
@@ -110,15 +110,15 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
             case 3:
                 let Deposite = parseInt(prompt("Enter Deposite Amount: "));
                 if(Deposite>0){
-                    TotalAmount=Balance+Deposite;
-                    console.log(`Deposite Amount: ${Deposite}rs`);
-                    console.log(`Total Amount: ${TotalAmount}rs`);
-                    }else if(Deposite==0){
-                        window.alert("Deposite Amount can't be Zero");
-                    } else if(Deposite<0){
-                        window.alert("Deposite Amount can't be Negative");
-                    } else{
-                        window.alert("Invalid Amount, Please enter a numeric value");
+                TotalAmount=Balance+Deposite;
+                console.log(`Deposite Amount: ${Deposite}₹`);
+                console.log(`Total Amount: ${TotalAmount}₹`);
+                }else if(Deposite==0){
+                    window.alert("Deposite Amount can't be Zero");
+                } else if(Deposite<0){
+                    window.alert("Deposite Amount can't be Negative");
+                } else{
+                    window.alert("Invalid Amount, Please enter a numeric value");
                 }
             break;
             case 4:
@@ -129,11 +129,11 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                     let Transfer = parseInt(prompt("Enter Transfer Amount: "));
                     if(Balance>=Transfer){
                         TotalAmount=Balance-Transfer;
-                        console.log(`Transfer Amount: ${Transfer}rs`);
-                        console.log(`Remaining Amount: ${TotalAmount}rs`);
+                        console.log(`Transfer Amount: ${Transfer}₹`);
+                        console.log(`Remaining Amount: ${TotalAmount}₹`);
                     } else{
                         console.log("Not Enough Money");
-                        console.log(`You want to Transfer ${Transfer}rs but Your balance is ${Balance}rs only`);
+                        console.log(`You want to Transfer ${Transfer}₹ but Your balance is ${Balance}₹ only`);
                     }
                 } else{
                     window.alert("Account Number can't be in Character");
@@ -147,24 +147,24 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
         let Balance = 13431;
         switch(user){
             case 1:
-                window.alert(`Your Balance is: ${Balance}rs`);
+                window.alert(`Your Balance is: ${Balance}₹`);
             break;
             case 2:
-                let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: Rs 100, Rs 500, Rs 200): "));
+                let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: ₹ 100, 500, 200): "));
                 if(Withdraw>0){
                     if(Balance>=Withdraw){
                         if(Withdraw%100==0){
                             TotalAmount=Balance-Withdraw;
-                            console.log(`Withdrawal Amount: ${Withdraw}rs`);
-                            console.log(`Remaining Amount: ${TotalAmount}rs`);
+                            console.log(`Withdrawal Amount: ${Withdraw}₹`);
+                            console.log(`Remaining Amount: ${TotalAmount}₹`);
                         } else if(Withdraw%100!=0){
-                            window.alert("Only 100, 500, 200 notes are available");
+                            window.alert("Only ₹ 100, 500, 200 notes are available");
                         } else{
                             window.alert("Invalid Amount");
                         }
                     } else if(Withdraw>Balance){
                         console.log("Not Enough Money");
-                        console.log(`You want to Withdraw ${Withdraw}rs but Your balance is ${Balance}rs only`);
+                        console.log(`You want to Withdraw ${Withdraw}₹ but Your balance is ${Balance}₹ only`);
                     } else{
                         window.alert("Invalid Amount");
                     }
@@ -179,15 +179,15 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
             case 3:
                 let Deposite = parseInt(prompt("Enter Deposite Amount: "));
                 if(Deposite>0){
-                    TotalAmount=Balance+Deposite;
-                    console.log(`Deposite Amount: ${Deposite}rs`);
-                    console.log(`Total Amount: ${TotalAmount}rs`);
-                    }else if(Deposite==0){
-                        window.alert("Deposite Amount can't be Zero");
-                    } else if(Deposite<0){
-                        window.alert("Deposite Amount can't be Negative");
-                    } else{
-                        window.alert("Invalid Amount, Please enter a numeric value");
+                TotalAmount=Balance+Deposite;
+                console.log(`Deposite Amount: ${Deposite}₹`);
+                console.log(`Total Amount: ${TotalAmount}₹`);
+                }else if(Deposite==0){
+                    window.alert("Deposite Amount can't be Zero");
+                } else if(Deposite<0){
+                    window.alert("Deposite Amount can't be Negative");
+                } else{
+                    window.alert("Invalid Amount, Please enter a numeric value");
                 }
             break;
             case 4:
@@ -198,11 +198,11 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                     let Transfer = parseInt(prompt("Enter Transfer Amount: "));
                     if(Balance>=Transfer){
                         TotalAmount=Balance-Transfer;
-                        console.log(`Transfer Amount: ${Transfer}rs`);
-                        console.log(`Remaining Amount: ${TotalAmount}rs`);
+                        console.log(`Transfer Amount: ${Transfer}₹`);
+                        console.log(`Remaining Amount: ${TotalAmount}₹`);
                     } else{
                         console.log("Not Enough Money");
-                        console.log(`You want to Transfer ${Transfer}rs but Your balance is ${Balance}rs only`);
+                        console.log(`You want to Transfer ${Transfer}₹ but Your balance is ${Balance}₹ only`);
                     }
                 } else{
                     window.alert("Account Number can't be in Character");
