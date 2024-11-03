@@ -1,6 +1,13 @@
 h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
-    color: crimson;
+    color: white;
     text-align: center;
+    margin-top: 80px;
+}
+
+body{
+    background-image: url(/MiniProjects/Bank/images/BankBackground.webp);
+    background-size: 1200px;
+    background-repeat: no-repeat;
 }
