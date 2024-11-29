@@ -1,5 +1,8 @@
 //const prompt = require("prompt-sync")();
 window.alert("Welcome to Krish Bankz");
+var lang=prompt("Select language: 1)English, 2)Hindi, 3)Gujrati");
+
+if(lang==1||lang=="English"||lang=="english"||lang=="ENGLISH"){
 var TotalAmount;
 var checkbank=prompt("Do you have a Bank Account? (YES/NO): ");
 if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
@@ -242,4 +245,5 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
     }
 } else{
     window.alert("Please select Yes or No");
+}
 }
