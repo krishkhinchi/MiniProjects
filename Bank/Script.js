@@ -287,17 +287,17 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                     }
                 break;
                 case 3:
-                    let Deposite = parseInt(prompt("Enter Deposite Amount: "));
+                    let Deposite = parseInt(prompt("जमा राशि दर्ज करें: "));
                     if(Deposite>0){
                     TotalAmount=Balance+Deposite;
-                    console.log(`Deposite Amount: ${Deposite}₹`);
-                    console.log(`Total Amount: ${TotalAmount}₹`);
+                    console.log(`जमा राशि: ${Deposite}₹`);
+                    console.log(`कुल राशि: ${TotalAmount}₹`);
                     }else if(Deposite==0){
-                        window.alert("Deposite Amount can't be Zero");
+                        window.alert("जमा राशि शून्य नहीं हो सकती");
                     } else if(Deposite<0){
-                        window.alert("Deposite Amount can't be Negative");
+                        window.alert("जमा राशि ऋणात्मक नहीं हो सकती");
                     } else{
-                        window.alert("Invalid Amount, Please enter a numeric value");
+                        window.alert("अमान्य राशि, कृपया एक संख्यात्मक मान दर्ज करें");
                     }
                 break;
                 case 4:
