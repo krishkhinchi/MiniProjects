@@ -301,25 +301,25 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                     }
                 break;
                 case 4:
-                    let TransferAccount = prompt("Enter A/C to transfer: ");
+                    let TransferAccount = prompt("स्थानांतरण खाता दर्ज करें: ");
                     if(TransferAccount==0){
-                        window.alert("Account Number can't be Zero");
+                        window.alert("खाता संख्या शून्य नहीं हो सकती");
                     } else if(!((TransferAccount>="A"&&TransferAccount<="Z")||(TransferAccount>="a"&&TransferAccount<="z"))){
-                        let Transfer = parseInt(prompt("Enter Transfer Amount: "));
+                        let Transfer = parseInt(prompt("स्थानांतरण राशि दर्ज करें: "));
                         if(Balance>=Transfer){
                             TotalAmount=Balance-Transfer;
-                            console.log(`Transfer Amount: ${Transfer}₹`);
-                            console.log(`Remaining Amount: ${TotalAmount}₹`);
+                            console.log(`स्थानांतरण राशि: ${Transfer}₹`);
+                            console.log(`बाकी अमाउंट: ${TotalAmount}₹`);
                         } else{
-                            console.log("Not Enough Money");
-                            console.log(`You want to Transfer ${Transfer}₹ but Your balance is ${Balance}₹ only`);
+                            console.log("पर्याप्त पैसा नहीं हैं");
+                            console.log(`आप स्थानांतरण करना चाहते हैं ${Transfer}₹ लेकिन आपका संतुलन ${Balance}₹ है केवल`);
                         }
                     } else{
-                        window.alert("Account Number can't be in Character");
+                        window.alert("खाता संख्या वर्ण में नहीं हो सकती");
                     }
                 break;
                 default:
-                    window.alert("Please Enter a Number between 1 to 4");
+                    window.alert("कृपया १ से ४ के बीच कोई संख्या दर्ज करें");
             }
         } else if(account==456){
             let user = parseInt(prompt("Enter 1:Check Balance, 2:Withdraw, 3:Deposite, 4:Transfer :"));
