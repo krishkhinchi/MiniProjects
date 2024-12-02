@@ -321,7 +321,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 default:
                     window.alert("कृपया १ से ४ के बीच कोई संख्या दर्ज करें");
             }
-        } else if(account==456){
+        } else if(account==456||account=="४५६"){
             let user = parseInt(prompt("1:शेष राशि जांचें, 2:निकासी, 3:जमा, 4:स्थानांतरण दर्ज करें:"));
             let Balance = 562900;
             switch(user){
