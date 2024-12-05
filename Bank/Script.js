@@ -462,7 +462,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
         } else {
             window.alert("Invalid Account Number");
         }
-    } else if(checkbank=="no"||checkbank=="NO"||checkbank=="No"){
+    } else if(checkbank=="no"||checkbank=="NO"||checkbank=="No"||checkbank=="नहीं"){
         let user = parseInt(prompt("Enter 1:Create Account, 2:Exit :"));
         if(user==1){
             let name=prompt("Enter your Name: ");
