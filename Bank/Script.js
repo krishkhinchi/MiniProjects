@@ -463,32 +463,32 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
             window.alert("Invalid Account Number");
         }
     } else if(checkbank=="no"||checkbank=="NO"||checkbank=="No"||checkbank=="नहीं"){
-        let user = parseInt(prompt("Enter 1:Create Account, 2:Exit :"));
+        let user = parseInt(prompt("दर्ज करें 1:खाता बनाएं, 2:बाहर निकलें :"));
         if(user==1){
-            let name=prompt("Enter your Name: ");
-            let age=parseInt(prompt("Enter your Age: "));
+            let name=prompt("अपना नाम दर्ज करें: ");
+            let age=parseInt(prompt("अपनी आयु दर्ज करें: "));
             if(age>=18){
-                let DL=prompt("You have Driving License? (Yes/No)");
+                let DL=prompt("आपके पास ड्राइविंग लाइसेंस है? (हां, नहीं)");
                 if(DL=="Yes"||DL=="yes"||DL=="YES"){
-                    let adhar=parseInt(prompt("Enter your Adhar Number: "));
-                    let pan=parseInt(prompt("Enter yout PAN Number: "));
-                    window.alert("Thankyou for submitting your details, your account will be created soon");
+                    let adhar=parseInt(prompt("अपना आधार नंबर दर्ज करें: "));
+                    let pan=parseInt(prompt("अपना पैन नंबर दर्ज करें: "));
+                    window.alert("अपना विवरण सबमिट करने के लिए धन्यवाद, आपका खाता जल्द ही बनाया जाएगा");
                 } else if(DL=="No"||DL=="no"||DL=="NO"){
-                    window.alert("Sorry, You can't create bank account. Due to you don't have Driving License");
+                    window.alert("क्षमा करें, आप बैंक खाता नहीं बना सकते. आपके पास ड्राइविंग लाइसेंस नहीं होने के कारण");
                 } else{
-                    window.alert("Invalid Input of Driving License");
+                    window.alert("ड्राइविंग लाइसेंस का अमान्य इनपुट");
                 }
             } else if(age<18){
-                window.alert("Sorry, You can't create bank account. Due to you are minor");
+                window.alert("क्षमा करें, आप बैंक खाता नहीं बना सकते. क्योंकि तुम नाबालिग हो");
             } else{
-                window.alert("Invalid Input of Age");
+                window.alert("आयु का अमान्य इनपुट");
             }
         } else if(user==2){
-            window.alert("Visit Again")
+            window.alert("पुनः पधारें")
         } else{
-            window.alert("Please Enter a Number between 1 to 2");
+            window.alert("कृपया 1 से 2 के बीच कोई संख्या दर्ज करें");
         }
     } else{
-        window.alert("Please select Yes or No");
+        window.alert("कृपया हाँ या नहीं चुनें");
     }
 }
