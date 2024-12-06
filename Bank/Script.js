@@ -1,6 +1,6 @@
 //const prompt = require("prompt-sync")();
 window.alert("Welcome to Krish Bankz");
-var lang=prompt("Select language: 1)English, 2)Hindi, 3)Gujrati");
+var lang=prompt("Select language: 1)English, 2)Hindi, 3)Gujarati");
 
 if(lang==1||lang=="English"||lang=="english"||lang=="ENGLISH"){
 var TotalAmount;
@@ -491,43 +491,43 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
     } else{
         window.alert("कृपया हाँ या नहीं चुनें");
     }
-} else if(lang==3||lang=="Gujrati"||lang=="gujrati"||lang=="GUJRATI"){
+} else if(lang==3||lang=="Gujarati"||lang=="gujarati"||lang=="GUJARATI"){
     var TotalAmount;
-    var checkbank=prompt("Do you have a Bank Account? (YES/NO): ");
-    if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
-        var account=parseInt(prompt("Enter your Account Number: "));
-        if(account==123){
-            let user = parseInt(prompt("Enter 1:Check Balance, 2:Withdraw, 3:Deposite, 4:Transfer :"));
+    var checkbank=prompt("શું તમારી પાસે બેંક ખાતું છે? (હા/ના): ");
+    if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"||checkbank=="હા"){
+        var account=parseInt(prompt("તમારો એકાઉન્ટ નંબર દાખલ કરો: "));
+        if(account==123||account=="૧૨૩"){
+            let user = parseInt(prompt("દાખલ કરો 1:બેલેન્સ તપાસો, 2:ઉપાડ, 3:જમા, 4:ટ્રાન્સફર :"));
             let Balance = 25590;
             switch(user){
                 case 1:
-                    window.alert(`Your Balance is: ${Balance}₹`);
+                    window.alert(`તમારું બેલેન્સ છે: ${Balance}₹`);
                 break;
                 case 2:
-                    let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: ₹ 100, 500, 200): "));
+                    let Withdraw = parseInt(prompt("ઉપાડની રકમ દાખલ કરો (ઉપલબ્ધ: ₹ 100, 500, 200): "));
                     if(Withdraw>0){
                         if(Balance>=Withdraw){
                             if(Withdraw%100==0){
                                 TotalAmount=Balance-Withdraw;
-                                console.log(`Withdrawal Amount: ${Withdraw}₹`);
-                                console.log(`Remaining Amount: ${TotalAmount}₹`);
+                                console.log(`ઉપાડની રકમ: ${Withdraw}₹`);
+                                console.log(`બાકીની રકમ: ${TotalAmount}₹`);
                             } else if(Withdraw%100!=0){
-                                window.alert("Only ₹ 100, 500, 200 notes are available");
+                                window.alert("માત્ર ₹100, 500, 200 ની નોટો ઉપલબ્ધ છે");
                             } else{
-                                window.alert("Invalid Amount");
+                                window.alert("અમાન્ય રકમ");
                             }
                         } else if(Withdraw>Balance){
-                            console.log("Not Enough Money");
-                            console.log(`You want to Withdraw ${Withdraw}₹ but Your balance is ${Balance}₹ only`);
+                            console.log("પૂરતા પૈસા નથી");
+                            console.log(`તમે ${Withdraw}₹ ઉપાડવા માંગો છો, પરંતુ તમારું બેલેન્સ છે ${Balance}₹ માત્ર`);
                         } else{
-                            window.alert("Invalid Amount");
+                            window.alert("અમાન્ય રકમ");
                         }
                     } else if(Withdraw==0){
-                        window.alert("Withdrawal Amount can't be Zero");
+                        window.alert("ઉપાડની રકમ શૂન્ય ન હોઈ શકે");
                     } else if(Withdraw<0){
-                        window.alert("Withdrawal Amount can't be Negative");
+                        window.alert("ઉપાડની રકમ નેગેટિવ ન હોઈ શકે");
                     } else{
-                        window.alert("Invalid Amount, Please enter a numeric value");
+                        window.alert("અમાન્ય રકમ, કૃપા કરીને સંખ્યાત્મક મૂલ્ય દાખલ કરો");
                     }
                 break;
                 case 3:
