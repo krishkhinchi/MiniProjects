@@ -635,77 +635,74 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                     window.alert("કૃપા કરીને 1 થી 4 ની વચ્ચેનો નંબર દાખલ કરો");
             }
         } else if(account==789){
-            let user = parseInt(prompt("Enter 1:Check Balance, 2:Withdraw, 3:Deposite, 4:Transfer :"));
+            let user = parseInt(prompt("દાખલ કરો 1:બેલેન્સ તપાસો, 2:ઉપાડ, 3:જમા, 4:ટ્રાન્સફર :"));
             let Balance = 13431;
             switch(user){
                 case 1:
-                    window.alert(`Your Balance is: ${Balance}₹`);
+                    window.alert(`તમારું બેલેન્સ છે: ${Balance}₹`);
                 break;
                 case 2:
-                    let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: ₹ 100, 500, 200): "));
+                    let Withdraw = parseInt(prompt("ઉપાડની રકમ દાખલ કરો (ઉપલબ્ધ: ₹ 100, 500, 200): "));
                     if(Withdraw>0){
                         if(Balance>=Withdraw){
                             if(Withdraw%100==0){
                                 TotalAmount=Balance-Withdraw;
-                                console.log(`Withdrawal Amount: ${Withdraw}₹`);
-                                console.log(`Remaining Amount: ${TotalAmount}₹`);
+                                console.log(`ઉપાડની રકમ: ${Withdraw}₹`);
+                                console.log(`બાકીની રકમ: ${TotalAmount}₹`);
                             } else if(Withdraw%100!=0){
-                                window.alert("Only ₹ 100, 500, 200 notes are available");
+                                window.alert("માત્ર ₹100, 500, 200 ની નોટો ઉપલબ્ધ છે");
                             } else{
-                                window.alert("Invalid Amount");
+                                window.alert("અમાન્ય રકમ");
                             }
                         } else if(Withdraw>Balance){
-                            console.log("Not Enough Money");
-                            console.log(`You want to Withdraw ${Withdraw}₹ but Your balance is ${Balance}₹ only`);
+                            console.log("પૂરતા પૈસા નથી");
+                            console.log(`તમે ${Withdraw}₹ ઉપાડવા માંગો છો, પરંતુ તમારું બેલેન્સ છે ${Balance}₹ માત્ર`);
                         } else{
-                            window.alert("Invalid Amount");
+                            window.alert("અમાન્ય રકમ");
                         }
                     } else if(Withdraw==0){
-                        window.alert("Withdrawal Amount can't be Zero");
+                        window.alert("ઉપાડની રકમ શૂન્ય ન હોઈ શકે");
                     } else if(Withdraw<0){
-                        window.alert("Withdrawal Amount can't be Negative");
+                        window.alert("ઉપાડની રકમ નેગેટિવ ન હોઈ શકે");
                     } else{
-                        window.alert("Invalid Amount, Please enter a numeric value");
+                        window.alert("અમાન્ય રકમ, કૃપા કરીને સંખ્યાત્મક મૂલ્ય દાખલ કરો");
                     }
                 break;
                 case 3:
-                    let Deposite = parseInt(prompt("Enter Deposite Amount: "));
+                    let Deposite = parseInt(prompt("ડિપોઝીટની રકમ દાખલ કરો: "));
                     if(Deposite>0){
                     TotalAmount=Balance+Deposite;
-                    console.log(`Deposite Amount: ${Deposite}₹`);
-                    console.log(`Total Amount: ${TotalAmount}₹`);
+                    console.log(`જમા રકમ: ${Deposite}₹`);
+                    console.log(`કુલ રકમ: ${TotalAmount}₹`);
                     }else if(Deposite==0){
-                        window.alert("Deposite Amount can't be Zero");
+                        window.alert("ડિપોઝીટની રકમ શૂન્ય ન હોઈ શકે");
                     } else if(Deposite<0){
-                        window.alert("Deposite Amount can't be Negative");
+                        window.alert("ડિપોઝીટની રકમ ઋણ હોઈ શકતી નથી");
                     } else{
-                        window.alert("Invalid Amount, Please enter a numeric value");
+                        window.alert("અમાન્ય રકમ, કૃપા કરીને સંખ્યાત્મક મૂલ્ય દાખલ કરો");
                     }
                 break;
                 case 4:
-                    let TransferAccount = prompt("Enter A/C to transfer: ");
+                    let TransferAccount = prompt("મોકલવા માટે A/C દાખલ કરો: ");
                     if(TransferAccount==0){
-                        window.alert("Account Number can't be Zero");
+                        window.alert("એકાઉન્ટ નંબર શૂન્ય ન હોઈ શકે");
                     } else if(!((TransferAccount>="A"&&TransferAccount<="Z")||(TransferAccount>="a"&&TransferAccount<="z"))){
-                        let Transfer = parseInt(prompt("Enter Transfer Amount: "));
+                        let Transfer = parseInt(prompt("ટ્રાન્સફર રકમ દાખલ કરો: "));
                         if(Balance>=Transfer){
                             TotalAmount=Balance-Transfer;
-                            console.log(`Transfer Amount: ${Transfer}₹`);
-                            console.log(`Remaining Amount: ${TotalAmount}₹`);
+                            console.log(`ટ્રાન્સફર રકમ: ${Transfer}₹`);
+                            console.log(`બાકીની રકમ: ${TotalAmount}₹`);
                         } else{
-                            console.log("Not Enough Money");
-                            console.log(`You want to Transfer ${Transfer}₹ but Your balance is ${Balance}₹ only`);
+                            console.log("પૂરતા પૈસા નથી");
+                            console.log(`તમે ${Transfer}₹ ટ્રાન્સફર કરવા માંગો છો, પરંતુ તમારું બેલેન્સ છે ${Balance}₹ માત્ર`);
                         }
                     } else{
-                        window.alert("Account Number can't be in Character");
+                        window.alert("એકાઉન્ટ નંબર અક્ષરમાં ન હોઈ શકે");
                     }
                 break;
                 default:
-                    window.alert("Please Enter a Number between 1 to 4");
+                    window.alert("કૃપા કરીને 1 થી 4 ની વચ્ચેનો નંબર દાખલ કરો");
             }
-        } else {
-            window.alert("Invalid Account Number");
-        }
     } else if(checkbank=="no"||checkbank=="NO"||checkbank=="No"){
         let user = parseInt(prompt("Enter 1:Create Account, 2:Exit :"));
         if(user==1){
