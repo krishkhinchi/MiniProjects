@@ -703,33 +703,34 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 default:
                     window.alert("કૃપા કરીને 1 થી 4 ની વચ્ચેનો નંબર દાખલ કરો");
             }
-    } else if(checkbank=="no"||checkbank=="NO"||checkbank=="No"){
-        let user = parseInt(prompt("Enter 1:Create Account, 2:Exit :"));
-        if(user==1){
-            let name=prompt("Enter your Name: ");
-            let age=parseInt(prompt("Enter your Age: "));
-            if(age>=18){
-                let DL=prompt("You have Driving License? (Yes/No)");
-                if(DL=="Yes"||DL=="yes"||DL=="YES"){
-                    let adhar=parseInt(prompt("Enter your Adhar Number: "));
-                    let pan=parseInt(prompt("Enter yout PAN Number: "));
-                    window.alert("Thankyou for submitting your details, your account will be created soon");
-                } else if(DL=="No"||DL=="no"||DL=="NO"){
-                    window.alert("Sorry, You can't create bank account. Due to you don't have Driving License");
-                } else{
-                    window.alert("Invalid Input of Driving License");
-                }
-            } else if(age<18){
-                window.alert("Sorry, You can't create bank account. Due to you are minor");
-            } else{
-                window.alert("Invalid Input of Age");
-            }
-        } else if(user==2){
-            window.alert("Visit Again")
-        } else{
-            window.alert("Please Enter a Number between 1 to 2");
-        }
-    } else{
-        window.alert("Please select Yes or No");
     }
+} else if(checkbank=="no"||checkbank=="NO"||checkbank=="No"||checkbank=="ના"){
+    let user = parseInt(prompt("દાખલ કરો 1:એકાઉન્ટ બનાવો, 2:બહાર નીકળો :"));
+    if(user==1){
+        let name=prompt("તમારું નામ દાખલ કરો: ");
+        let age=parseInt(prompt("તમારી ઉંમર દાખલ કરો: "));
+        if(age>=18){
+            let DL=prompt("તમારી પાસે ડ્રાઇવિંગ લાઇસન્સ છે? (હા/ના)");
+            if(DL=="Yes"||DL=="yes"||DL=="YES"||DL=="હા"){
+                let adhar=parseInt(prompt("તમારો આધાર નંબર દાખલ કરો: "));
+                let pan=parseInt(prompt("તમારો PAN નંબર દાખલ કરો: "));
+                window.alert("તમારી વિગતો સબમિટ કરવા બદલ આભાર, ટૂંક સમયમાં તમારું એકાઉન્ટ બનાવવામાં આવશે");
+            } else if(DL=="No"||DL=="no"||DL=="NO"||DL=="ના"){
+                window.alert("માફ કરશો, તમે બેંક એકાઉન્ટ બનાવી શકતા નથી. કારણ કે તમારી પાસે ડ્રાઇવિંગ લાઇસન્સ નથી");
+            } else{
+                window.alert("ડ્રાઇવિંગ લાયસન્સનું અમાન્ય ઇનપુટ");
+            }
+        } else if(age<18){
+            window.alert("માફ કરશો, તમે બેંક એકાઉન્ટ બનાવી શકતા નથી. તમારા કારણે નાના છો");
+        } else{
+            window.alert("ઉંમરનું અમાન્ય ઇનપુટ");
+        }
+    } else if(user==2){
+        window.alert("ફરી મુલાકાત લો, આભાર")
+    } else{
+        window.alert("કૃપા કરીને 1 થી 2 ની વચ્ચેનો નંબર દાખલ કરો");
+    }
+} else{
+    window.alert("કૃપા કરીને હા અથવા ના પસંદ કરો");
+}
 }
