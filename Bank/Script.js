@@ -1,12 +1,20 @@
 //const prompt = require("prompt-sync")();
+
+// Display welcome message
 window.alert("Welcome to Krish Bankz");
+
+// Get user's language preference
 var lang=prompt("Select language: 1)English, 2)Hindi, 3)Gujarati");
 
+// Handle English language selection
 if(lang==1||lang=="English"||lang=="english"||lang=="ENGLISH"){
 var TotalAmount;
+// Check if user has existing account
 var checkbank=prompt("Do you have a Bank Account? (YES/NO): ");
 if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
+    // Get account number
     var account=parseInt(prompt("Enter your Account Number: "));
+    // Account 123 handling
     if(account==123){
         let user = parseInt(prompt("Enter 1:Check Balance, 2:Withdraw, 3:Deposite, 4:Transfer :"));
         let Balance = 25590;
@@ -15,9 +23,11 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 window.alert(`Your Balance is: ${Balance}₹`);
             break;
             case 2:
+                // Handle withdrawal
                 let Withdraw = parseInt(prompt("Enter Withdraw Amount (Available: ₹ 100, 500, 200): "));
                 if(Withdraw>0){
                     if(Balance>=Withdraw){
+                        // Check if withdrawal amount is in valid denominations
                         if(Withdraw%100==0){
                             TotalAmount=Balance-Withdraw;
                             console.log(`Withdrawal Amount: ${Withdraw}₹`);
@@ -42,6 +52,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 }
             break;
             case 3:
+                // Handle deposit
                 let Deposite = parseInt(prompt("Enter Deposite Amount: "));
                 if(Deposite>0){
                 TotalAmount=Balance+Deposite;
@@ -56,6 +67,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 }
             break;
             case 4:
+                // Handle transfer
                 let TransferAccount = prompt("Enter A/C to transfer: ");
                 if(TransferAccount==0){
                     window.alert("Account Number can't be Zero");
@@ -77,6 +89,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 window.alert("Please Enter a Number between 1 to 4");
         }
     } else if(account==456){
+        // Account 456 handling - similar structure as account 123
         let user = parseInt(prompt("Enter 1:Check Balance, 2:Withdraw, 3:Deposite, 4:Transfer :"));
         let Balance = 562900;
         switch(user){
@@ -146,6 +159,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
                 window.alert("Please Enter a Number between 1 to 4");
         }
     } else if(account==789){
+        // Account 789 handling - similar structure as previous accounts
         let user = parseInt(prompt("Enter 1:Check Balance, 2:Withdraw, 3:Deposite, 4:Transfer :"));
         let Balance = 13431;
         switch(user){
@@ -218,6 +232,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
         window.alert("Invalid Account Number");
     }
 } else if(checkbank=="no"||checkbank=="NO"||checkbank=="No"){
+    // Handle new account creation
     let user = parseInt(prompt("Enter 1:Create Account, 2:Exit :"));
     if(user==1){
         let name=prompt("Enter your Name: ");
@@ -248,6 +263,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
 }
 
 } else if(lang==2||lang=="Hindi"||lang=="hindi"||lang=="HINDI"){
+    // Hindi language section - similar structure as English
     var TotalAmount;
     var checkbank=prompt("क्या आपके पास बैंक खाता है? (हां, नहीं): ");
     if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"||checkbank=="हां"){
@@ -492,6 +508,7 @@ if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"){
         window.alert("कृपया हाँ या नहीं चुनें");
     }
 } else if(lang==3||lang=="Gujarati"||lang=="gujarati"||lang=="GUJARATI"){
+    // Gujarati language section - similar structure as English and Hindi
     var TotalAmount;
     var checkbank=prompt("શું તમારી પાસે બેંક ખાતું છે? (હા/ના): ");
     if(checkbank=="yes"||checkbank=="YES"||checkbank=="Yes"||checkbank=="હા"){
